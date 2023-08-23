@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>VScode打开黑屏</title>
+    <link href="/2023/08/23/VScode%E6%89%93%E5%BC%80%E9%BB%91%E5%B1%8F/"/>
+    <url>/2023/08/23/VScode%E6%89%93%E5%BC%80%E9%BB%91%E5%B1%8F/</url>
+    
+    <content type="html"><![CDATA[<p>为了介绍exlg的cph功能，我安装了VScode，并顺手把下载了几个小时的VS删了，配置了C++环境。</p><p>今天打开VScode发现什么也没有，就一块灰色的屏幕，bdfs无果。如果你坚信扩展就是VScode的一切，那么可以看看我的方法。</p><p>下面讲一下我的方法。</p><p>把有关VScode的文件都删了，除了MinGW。重新安装VScode，打开，切记不要关掉，不然要重新下载。打开后把没用的扩展（如live2d）能删就删，问题就解决了。</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>VScode</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>如何配置VScode的C++环境</title>
     <link href="/2023/08/22/%E5%A6%82%E4%BD%95%E9%85%8D%E7%BD%AEVScode%E7%9A%84C++%E7%8E%AF%E5%A2%83/"/>
     <url>/2023/08/22/%E5%A6%82%E4%BD%95%E9%85%8D%E7%BD%AEVScode%E7%9A%84C++%E7%8E%AF%E5%A2%83/</url>
