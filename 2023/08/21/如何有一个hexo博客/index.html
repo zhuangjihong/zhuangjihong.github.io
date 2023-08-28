@@ -24,7 +24,7 @@
 <meta property="og:description" content="此文章使用 windows 系统介绍。 你需要： Git Nodejs(建议使用12.0及以上版本，推荐12.22.12版本) 没了  如何安装Nodejs打开这个链接，点击 node-v12.22.12-x64.msi 就可以下载 Nodejs 了。 Git打开这个链接，点击右侧电脑，就可以下载 Git 了。 安装hexo打开 Git Bash，输入 1npm install hexo  就可以">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-08-21T07:24:34.000Z">
-<meta property="article:modified_time" content="2023-08-28T06:02:24.095Z">
+<meta property="article:modified_time" content="2023-08-28T11:29:14.363Z">
 <meta property="article:author" content="zhuangjihong">
 <meta property="article:tag" content="hexo">
 <meta name="twitter:card" content="summary_large_image">
@@ -383,7 +383,7 @@
 <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>下载<a target="_blank" rel="noopener" href="https://github.com/fluid-dev/hexo-theme-fluid/releases">fluid最新版本</a>，解压到 <code>themes</code> 目录，并将解压出的文件夹重命名为 <code>fluid</code>。进入 <code>fluid</code> 文件夹，打开这个文件夹中的 <code>_config.yml</code> 文件，复制里面的内容，再在你用于部署博客的文件夹（也就是有 <code>source</code> 文件夹的文件夹）里新建一个 <code>_config.fluid.yml</code> 文件，打开，粘贴复制的内容，可以自定义一些比如说标题、背景图等参数，详见<a target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/docs/guide/#%E5%85%B3%E4%BA%8E%E6%8C%87%E5%8D%97">fluid配置指南</a>。保存后运行前面提到过用于更新的命令，就可以看到效果了。</p>
 <h1 id="写文章"><a href="#写文章" class="headerlink" title="写文章"></a>写文章</h1><p>用 <code>Git Bash</code> 输入 <code>hexo new &quot;文章题目&quot;</code> 即可在 <code>source -&gt; _post</code> 文件夹里看到创建的文章，选择一个编辑器如 <code>VScode</code> 来编辑文章。</p>
 <p>文章是 <code>.md</code> 类型的，也就是要用 <code>Markdown</code> 来编辑，关于 <code>Markdown</code> 的使用详见 <a target="_blank" rel="noopener" href="http://www.markdown.cn/">Markdown教程</a>。</p>
-<p>在文章的前 $5$ 行可以看到这些东西：</p>
+<p>在文章的前 5 行可以看到这些东西：</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">文章题目</span><br><span class="hljs-attr">date:</span> <span class="hljs-string">xxxx-xx-xx</span> <span class="hljs-string">xx:xx:xx</span><br><span class="hljs-attr">tags:</span><br><span class="hljs-meta">---</span><br></code></pre></td></tr></table></figure>
 
 <p>其中 <code>date</code> 是文章创建的日期，<code>tags</code> 是文章的标签，除此之外，你还可以添加 <code>categories:</code> 即文章的分类，注意冒号后有空格。</p>
