@@ -407,7 +407,8 @@
   
   
     <article id="comments" lazyload>
-      
+      <script src="//cdn.jsdelivr.net/npm/@waline/client"></script>
+
   <div id="waline"></div>
   <script type="text/javascript">
     Fluid.utils.loadComments('#waline', function() {
@@ -417,7 +418,8 @@
           {"serverURL":"https://hexo-r2889xpec-zhuangjihongs-projects.vercel.app/","path":"window.location.pathname","meta":["nick","mail","link"],"requiredMeta":["nick"],"lang":"zh-CN","emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo"],"dark":"html[data-user-color-scheme=\"dark\"]","wordLimit":0,"pageSize":10},
           {
             el: '#waline',
-            path: window.location.pathname
+            path: window.location.pathname,
+            serverURL: 'https://hexo-r2889xpec-zhuangjihongs-projects.vercel.app/',
           }
         )
         Waline.init(options);
@@ -431,7 +433,7 @@
   </script>
   <noscript>Please enable JavaScript to view the comments</noscript>
 
-
+ 
     </article>
   
 
