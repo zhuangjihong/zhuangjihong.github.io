@@ -16,24 +16,21 @@
   <meta name="author" content="volatile">
   <meta name="keywords" content="">
   
-    <meta name="description" content="思路 只要回答是“是”，那么就会排除掉没有这个特征的动物，那么可行集就变少了，要想“是”的回答数量最多，则提问的次数就得越多，我们提问大部分动物有的特征，“不是”的可能会比较小，且可以刷“是”的次数。注意得到的结果要加 111，因为最后不会只剩下一种动物，要再问一遍它们不同的特征才能得到答案。 代码 1234567891011121314151617181920212223242526272829">
-<meta property="og:type" content="article">
-<meta property="og:title" content="P9960">
-<meta property="og:url" content="http://example.com/2024/01/14/P9960/index.html">
+    <meta property="og:type" content="article">
+<meta property="og:title" content="冬令营游记">
+<meta property="og:url" content="http://example.com/2024/03/15/%E5%86%AC%E4%BB%A4%E8%90%A5%E6%B8%B8%E8%AE%B0/index.html">
 <meta property="og:site_name" content="volatile&#39;s blog">
-<meta property="og:description" content="思路 只要回答是“是”，那么就会排除掉没有这个特征的动物，那么可行集就变少了，要想“是”的回答数量最多，则提问的次数就得越多，我们提问大部分动物有的特征，“不是”的可能会比较小，且可以刷“是”的次数。注意得到的结果要加 111，因为最后不会只剩下一种动物，要再问一遍它们不同的特征才能得到答案。 代码 1234567891011121314151617181920212223242526272829">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-01-14T06:51:21.000Z">
-<meta property="article:modified_time" content="2024-01-14T06:51:38.431Z">
+<meta property="article:published_time" content="2024-03-15T12:47:52.000Z">
+<meta property="article:modified_time" content="2024-03-15T12:47:52.251Z">
 <meta property="article:author" content="volatile">
-<meta property="article:tag" content="题解">
 <meta name="twitter:card" content="summary_large_image">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>P9960 - volatile&#39;s blog</title>
+  <title>冬令营游记 - volatile&#39;s blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -213,7 +210,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="P9960"></span>
+            <span id="subtitle" data-typed-text="冬令营游记"></span>
           
         </div>
 
@@ -229,8 +226,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-01-14 14:51" pubdate>
-          2024年1月14日 下午
+        <time datetime="2024-03-15 20:47" pubdate>
+          2024年3月15日 晚上
         </time>
       </span>
     
@@ -241,7 +238,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          796 字
+          0 字
         
       </span>
     
@@ -252,7 +249,7 @@
         
         
         
-          7 分钟
+          1 分钟
         
       </span>
     
@@ -297,16 +294,12 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">P9960</h1>
+            <h1 id="seo-header">冬令营游记</h1>
             
             
               <div class="markdown-body">
                 
-                <h1>思路</h1>
-<p>只要回答是“是”，那么就会排除掉没有这个特征的动物，那么可行集就变少了，要想“是”的回答数量最多，则提问的次数就得越多，我们提问大部分动物有的特征，“不是”的可能会比较小，且可以刷“是”的次数。注意得到的结果要加 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span>，因为最后不会只剩下一种动物，要再问一遍它们不同的特征才能得到答案。</p>
-<h1>代码</h1>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;iostream&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;string&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><span class="hljs-keyword">struct</span> <span class="hljs-title class_">animals</span>&#123;<br>    string name,tz[<span class="hljs-number">114</span>];<br>    <span class="hljs-type">int</span> k;<br>&#125;a[<span class="hljs-number">114</span>];<br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span><br><span class="hljs-function"></span>&#123;<br>    <span class="hljs-type">int</span> n,maxn=<span class="hljs-number">-114514</span>;<br>    cin&gt;&gt;n;<br>    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">1</span>;i&lt;=n;i++)&#123;<br>        cin&gt;&gt;a[i].name&gt;&gt;a[i].k;<br>        <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> j=<span class="hljs-number">1</span>;j&lt;=a[i].k;j++) cin&gt;&gt;a[i].tz[j];<br>    &#125;<br>    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">1</span>;i&lt;n;i++)&#123;<br>        <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> j=i+<span class="hljs-number">1</span>;j&lt;=n;j++)&#123;<br>            <span class="hljs-type">int</span> t=<span class="hljs-number">0</span>;<br>            <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> k=<span class="hljs-number">1</span>;k&lt;=a[i].k;k++)&#123;<br>                <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> l=<span class="hljs-number">1</span>;l&lt;=a[j].k;l++)&#123;<br>                    <span class="hljs-keyword">if</span>(a[i].tz[k]==a[j].tz[l])&#123;<br>                        t++;<br>                        <span class="hljs-keyword">break</span>;<br>                    &#125;<br>                &#125;<br>            &#125;<br>            maxn=t&gt;maxn?t:maxn;<br>        &#125;<br>    &#125;<br>    cout&lt;&lt;maxn+<span class="hljs-number">1</span>;<br>    cout&lt;&lt;endl;<br>    <span class="hljs-built_in">system</span>(<span class="hljs-string">&quot;pause&quot;</span>);<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
-
+                
                 
               </div>
             
@@ -314,13 +307,6 @@
             <div>
               <div class="post-metas my-3">
   
-  
-    <div class="post-meta">
-      <i class="iconfont icon-tags"></i>
-      
-        <a href="/tags/%E9%A2%98%E8%A7%A3/" class="print-no-link">#题解</a>
-      
-    </div>
   
 </div>
 
@@ -330,8 +316,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>P9960</div>
-      <div>http://example.com/2024/01/14/P9960/</div>
+      <div>冬令营游记</div>
+      <div>http://example.com/2024/03/15/冬令营游记/</div>
     </div>
     <div class="license-meta">
       
@@ -343,7 +329,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2024年1月14日</div>
+          <div>2024年3月15日</div>
         </div>
       
       
@@ -375,18 +361,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/03/15/%E5%86%AC%E4%BB%A4%E8%90%A5%E6%B8%B8%E8%AE%B0/" title="冬令营游记">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">冬令营游记</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2024/01/14/CF493B/" title="CF493B">
-                        <span class="hidden-mobile">CF493B</span>
+                      <a href="/2024/01/14/P9960/" title="P9960">
+                        <span class="hidden-mobile">P9960</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
